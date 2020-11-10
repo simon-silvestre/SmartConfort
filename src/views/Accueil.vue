@@ -1,18 +1,23 @@
 <template>
   <div class="home">
-    <hooper :infiniteScroll="true" :autoPlay="true" :playSpeed="5000" :transition="1000">
+    <hooper :infiniteScroll="true" :autoPlay="true" :playSpeed="5000" :transition="1000" ref="carousel" @slide="updateCarousel">
       <slide>
+        <div class="overlay"></div>
         <img src="@/assets/slider1.png" alt="salon">
       </slide>
      <slide>
+       <div class="overlay"></div>
         <img src="@/assets/slider2.png" alt="terasse avec baie vitrée">
       </slide>
       <slide>
+        <div class="overlay"></div>
         <img src="@/assets/slider3.png" alt="enfants">
       </slide>
       <slide>
+        <div class="overlay"></div>
         <img src="@/assets/slider4.png" alt="télécommande tactile">
       </slide>
+      <hooper-pagination slot="hooper-addons"></hooper-pagination>
     </hooper>
       <svg @click.prevent="slideNext" enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" 
       xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M24.291,14.276L14.705,4.69c-0.878-0.878-2.317-0.878-3.195,0l-0.8,0.8c-0.878,0.877-0.878,2.316,0,3.194  
@@ -28,7 +33,7 @@
 </template>
 
 <script>
-import { Hooper, Slide } from 'hooper';
+import { Hooper, Slide, Pagination as HooperPagination } from 'hooper';
 import 'hooper/dist/hooper.css';
 
 export default {
@@ -36,6 +41,28 @@ export default {
   components: {
     Hooper,
     Slide,
+    HooperPagination
+  },
+  data() {
+    return {
+      carouselData: 0
+    }
+  },
+  watch: {
+    carouselData () {
+      this.$refs.carousel.slideTo(this.carouselData);
+    }
+  },
+  methods: {
+    slidePrev() {
+      this.$refs.carousel.slidePrev();
+    },
+    slideNext() {
+      this.$refs.carousel.slideNext();
+    },
+    updateCarousel(payload) {
+      this.myCarouselData = payload.currentSlide;
+    }
   }
 }
 </script>
@@ -52,16 +79,24 @@ export default {
   .home section button.hooper-next:focus {
     outline: none!important;
   }
-  img {
+  .home section img {
     width: 100%;
   }
-
-  /*  A faire slider assombri .overlay { background-color: rgba(0, 0, 0, 0.3); } */
+  .hooper-pagination {
+    bottom: 10px;
+  }
+  .overlay { 
+    position: absolute;
+    height: calc(100% - 5px);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+  } 
   
   svg {
     position: absolute;
     z-index: 10;
     top: calc(50% + 16px);
+    cursor: pointer;
   }
   .home svg:nth-last-child(1) {
     left: 35px;
