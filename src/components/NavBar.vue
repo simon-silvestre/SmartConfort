@@ -23,7 +23,7 @@ export default {
     position: fixed;
 
     width: 100%;
-    height: 90px;
+    height: 80px;
     background-color: #fff;
     border-bottom: 1px solid #e5e5e5;
     z-index: 100;
