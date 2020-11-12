@@ -4,7 +4,7 @@
         <img src="../assets/logo_smartconfort.webp" alt="Logo entreprise">
         <img src="@/assets/menu_icon.webp" @click="showNav = !showNav">
     </div>
-    <nav :class="{'open':showNav}">
+    <nav @click="showNav = !showNav" :class="{'open':showNav}">
       <router-link to="/">Accueil</router-link> 
       <router-link to="/services">Nos Services</router-link>
       <router-link to="/contact">Contact</router-link>
@@ -56,16 +56,18 @@ export default {
     position: absolute;
     width: 75%;
     height: 130px;
+    max-height: 0;
     top: 81px;
-    padding: 3%;
-    display: none;
+    padding: 0 3%;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     background-color: #fff;
+    transition: all 0.4s ease-in-out;
     border-top: 3px solid #05aeea;
-    z-index: 101;
-    transition: All 1s ease-in-out;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    visibility: hidden;
   }
   .Mobile_nav nav a {
     width: 80%;
@@ -93,6 +95,8 @@ export default {
    color: #05aeea;
   }
   .Mobile_nav .open {
-    display: flex;
+    visibility: visible;
+    max-height: 135px;
+    padding: 3%;
   }
 </style>

@@ -9,7 +9,7 @@
             <p>contact@smartconfort.fr</p>
         </div>
         <div class="footer__partenaires">
-            
+
         </div>
     </div>
 </template>
@@ -32,6 +32,7 @@ export default {
     .footer__logo {
         width: 200px;
         height: auto;
+        margin-right: 15px;
     }
     .footer__logo img {
         width: 100%;
