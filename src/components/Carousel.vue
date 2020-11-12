@@ -3,7 +3,7 @@
     <hooper :infiniteScroll="true" :autoPlay="true" :playSpeed="8000" :transition="1000" :wheelControl="false" ref="carousel" @slide="updateCarousel">
       <slide>
         <div class="overlay"></div>
-        <img src="@/assets/slider1.png" alt="salon">
+        <img src="@/assets/slider1.webp" alt="salon">
         <div class="slide__text">
           <h2>Contrôlez</h2>  
           <p>votre maison quand vous le vous le voulez d’un simple geste</p>
@@ -11,7 +11,7 @@
       </slide>
      <slide>
        <div class="overlay"></div>
-        <img src="@/assets/slider2.png" alt="terasse avec baie vitrée">
+        <img src="@/assets/slider2.webp" alt="terasse avec baie vitrée">
         <div class="slide__text">
           <h2>profitez</h2>
           <p>d’une maison intélligente & connectée</p>
@@ -19,7 +19,7 @@
       </slide>
       <slide>
         <div class="overlay"></div>
-        <img src="@/assets/slider3.png" alt="enfants">
+        <img src="@/assets/slider3.webp" alt="enfants">
         <div class="slide__text">
           <h2>Protégez</h2>
           <p>vos biens ainsi que votre famille</p>
@@ -27,7 +27,7 @@
       </slide>
       <slide>
         <div class="overlay"></div>
-        <img src="@/assets/slider4.png" alt="télécommande tactile">
+        <img src="@/assets/slider4.webp" alt="télécommande tactile">
         <div class="slide__text">
           <h2>Vivez</h2>
           <p>le multimédia intélligent</p>

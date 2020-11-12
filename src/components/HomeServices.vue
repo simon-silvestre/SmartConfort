@@ -9,13 +9,13 @@
         <p class="text-separateur">Installateur, alarme, Vidéoprotection, intégrateur domotique, nous disposons de compétences dans le domaine de la vente, le conseil et  l’installation.</p>
         <div class="homeServices__items">
             <div class="homeServices__img">
-                <img src="@/assets/smarthome.png" alt="maison connectée">
+                <img src="@/assets/smarthome.webp" alt="maison connectée">
             </div>
             <div class="items_container">
                 <div class="item">
                     <div class="item__logo">
                         <span class="cercle"></span>
-                        <img src="@/assets/icon_camera.svg" alt="camera">
+                        <img src="@/assets/icon_camera.webp" alt="camera">
                     </div>
                     <div class="item__description">
                         <p><strong>Video surveillance</strong></p>
@@ -26,7 +26,7 @@
                 <div class="item">
                     <div class="item__logo">
                         <span class="cercle"></span>
-                        <img src="@/assets/icon_domotic.svg" alt="maison">
+                        <img src="@/assets/icon_domotic.webp" alt="maison">
                     </div>
                     <div class="item__description">
                         <p><strong>domotique</strong></p>
@@ -37,7 +37,7 @@
                 <div class="item">
                     <div class="item__logo">
                         <span class="cercle"></span>
-                        <img src="@/assets/icon_alarm.svg" alt="alarme">
+                        <img src="@/assets/icon_alarm.webp" alt="alarme">
                     </div>
                     <div class="item__description">
                         <p><strong>alarme / sécurité</strong></p>
@@ -60,6 +60,7 @@ export default {
     .homeServices {
         width: 100%;
         margin-top: 50px;
+        margin-bottom: 75px;
     }
     h2 {
         font-size: 35px;
@@ -86,7 +87,7 @@ export default {
     }
     .text-separateur {
         width: 50%;
-        min-width: 450px;
+        min-width: 280px;
         text-align: center;
         margin: 0 auto;
     }
@@ -128,7 +129,7 @@ export default {
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        border: 1px solid #7a7a7a;
+        border: 1px solid #dfdfe0;
         margin-right: 30px;
     }
     .item__logo img {

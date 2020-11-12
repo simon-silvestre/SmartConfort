@@ -1,17 +1,34 @@
 <template>
   <div id="app">
-    <NavBar />
+    <NavBar v-if="!mobileView" />
+    <MobileNav v-if="mobileView" />
     <router-view />
   </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue'
+import MobileNav from '@/components/NavBarMobile.vue'
 
 export default {
   name: 'Accueil',
   components: {
-    NavBar
+    NavBar,
+    MobileNav
+  },
+  data() {
+    return {
+        mobileView: false,
+    }
+  },
+  methods: {
+    handleView() {
+      this.mobileView = window.innerWidth <= 650;
+    }
+  },
+  created() {
+    this.handleView();
+    window.addEventListener('resize', this.handleView);
   }
 }
 </script>
