@@ -60,7 +60,7 @@ export default {
     .homeServices {
         width: 100%;
         margin-top: 50px;
-        margin-bottom: 75px;
+        margin-bottom: 120px;
     }
     h2 {
         font-size: 35px;
