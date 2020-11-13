@@ -81,12 +81,11 @@ export default {
         }
         ul li {
             font-size: 14px;
-            text-align: center;
         }
         .homeContact a {
             position: relative;
             top: 40px;
-            left: calc(50% - 70px);
+            left: 50px
         }
     }
     @media screen and (max-width: 374px) { 
