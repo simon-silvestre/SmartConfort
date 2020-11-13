@@ -11,7 +11,19 @@
             <div class="homeServices__img">
                 <img src="@/assets/smarthome.webp" alt="maison connectée">
             </div>
+            
             <div class="items_container">
+                 <div class="item">
+                    <div class="item__logo">
+                        <span class="cercle"></span>
+                        <img src="@/assets/icon_alarm.webp" alt="alarme">
+                    </div>
+                    <div class="item__description">
+                        <p><strong>alarme / sécurité</strong></p>
+                        <p>Système de sécurité  pour votre domicile ou petit commerce. Protégez vos chantiers, (Télésurveillance avec vidéo) installation rapide sans besoin électrique (Location au mois)</p>
+                    </div>
+                </div>
+
                 <div class="item">
                     <div class="item__logo">
                         <span class="cercle"></span>
@@ -34,16 +46,6 @@
                     </div>
                 </div>
 
-                <div class="item">
-                    <div class="item__logo">
-                        <span class="cercle"></span>
-                        <img src="@/assets/icon_alarm.webp" alt="alarme">
-                    </div>
-                    <div class="item__description">
-                        <p><strong>alarme / sécurité</strong></p>
-                        <p>Système de sécurité  pour votre domicile ou petit commerce. Protégez vos chantiers, (Télésurveillance avec vidéo) installation rapide sans besoin électrique (Location au mois)</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -82,7 +84,7 @@ export default {
         width: 15px;
         height: 15px;
         border-radius: 50%;
-        background-color: #05aeea;
+        background-color: #1faf8e;
         margin: 0 4px;
     }
     .text-separateur {

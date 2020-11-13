@@ -64,7 +64,7 @@ export default {
     align-items: flex-start;
     background-color: #fff;
     transition: all 0.4s ease-in-out;
-    border-top: 3px solid #05aeea;
+    border-top: 3px solid #1faf8e;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     visibility: hidden;
@@ -82,7 +82,7 @@ export default {
     position: absolute;
     top: 20px;
     left: 25px;
-    color: #05aeea;
+    color: #1faf8e;
     font-weight: 900;
     font-size: 20px;
     cursor: pointer;
@@ -92,7 +92,7 @@ export default {
     transition: ease-in-out 0.3s;
   }
   .Mobile_nav nav a.router-link-exact-active {
-   color: #05aeea;
+   color: #1faf8e;
   }
   .Mobile_nav .open {
     visibility: visible;

@@ -1,15 +1,12 @@
 <template>
     <div class="footer">
-        <div class="footer__logo">
+        <div class="footer__logo" v-scroll-reveal="{ duration: 1200, delay: 500, origin: 'bottom', distance: '20px'}">
             <img src="@/assets/logo_smartconfort.webp" alt="">
         </div>
-        <div class="footer__informations">
+        <div class="footer__informations" v-scroll-reveal="{ duration: 1200, delay: 500, origin: 'right', distance: '20px'}">
             <p><span>Smart</span>confort – 78550 Richebourg</p>
             <p>01.85.77.00.99</p>
             <p>contact@smartconfort.fr</p>
-        </div>
-        <div class="footer__partenaires">
-
         </div>
     </div>
 </template>
@@ -27,7 +24,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #2b2b2b;
+        background-color: #fff;
     }
     .footer__logo {
         width: 200px;
@@ -40,7 +37,7 @@ export default {
     .footer__informations p {
         font-size: 14px;
         font-weight: 600;
-        color: #dfdfe0;
+        color: #8f8f8f;
         margin: 15px;
     }
     .footer__informations p span {

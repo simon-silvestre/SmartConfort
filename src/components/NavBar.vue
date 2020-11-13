@@ -47,6 +47,6 @@ export default {
     transition: ease-in-out 0.3s;
   }
   .NavBar nav a.router-link-exact-active {
-   color: #05aeea;
+   color: #1faf8e;
   }
 </style>
