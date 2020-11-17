@@ -2,7 +2,7 @@
   <div class="Mobile_nav">
     <div class="header_bar">
         <img src="../assets/logo_smartconfort.webp" alt="Logo entreprise">
-        <img src="@/assets/menu_icon.webp" @click="showNav = !showNav">
+        <img src="@/assets/menu_icon.webp" alt="icon menu hamburger" @click="showNav = !showNav">
     </div>
     <nav @click="showNav = !showNav" :class="{'open':showNav}">
       <router-link to="/">Accueil</router-link> 
@@ -34,7 +34,6 @@ export default {
     background-color: #fff;
     border-bottom: 1px solid #e5e5e5;
     z-index: 100;
-
   }
   .header_bar {
     position: relative;
@@ -46,12 +45,13 @@ export default {
   }
   .header_bar img:first-child {
     width: 100px;
+    height: auto;
   }
   .header_bar img:nth-child(2) {
     width: 20px;
+    height: auto;
     cursor: pointer;
   }
-
   .Mobile_nav nav {
     position: absolute;
     width: 75%;
@@ -71,28 +71,19 @@ export default {
   }
   .Mobile_nav nav a {
     width: 80%;
-    color: #666666;
+    color: #595959;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
     padding: 10px 5%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.03);
   }
-  .Mobile_nav nav span {
-    position: absolute;
-    top: 20px;
-    left: 25px;
-    color: #1faf8e;
-    font-weight: 900;
-    font-size: 20px;
-    cursor: pointer;
-  }
   .Mobile_nav nav a:hover {
     opacity: 0.7;
     transition: ease-in-out 0.3s;
   }
   .Mobile_nav nav a.router-link-exact-active {
-   color: #1faf8e;
+   color: #126451;
   }
   .Mobile_nav .open {
     visibility: visible;

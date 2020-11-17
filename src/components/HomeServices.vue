@@ -96,7 +96,7 @@ export default {
     .homeServices p {
         font-size: 14px;
         font-weight: 600;
-        color: #7a7a7a;
+        color: #595959;
     }
     .homeServices__items {
         display: flex;
@@ -136,6 +136,7 @@ export default {
     }
     .item__logo img {
         width: 50%;
+        height: auto;
     }
     .item__logo .cercle {
        position: absolute;

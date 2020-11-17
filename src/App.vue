@@ -2,7 +2,9 @@
   <div id="app">
     <NavBar v-if="!mobileView" />
     <MobileNav v-if="mobileView" />
-    <router-view />
+    <transition name="fade" mode="out-in">
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -42,5 +44,13 @@ export default {
     font-family: "Open Sans", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+    transform: translateX(2em);
+  }
+  .fade-enter-active, .fade-leave-active {
+    transition: all .3s ease;
   }
 </style>

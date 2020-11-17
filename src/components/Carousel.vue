@@ -98,6 +98,7 @@ export default {
   }
   .carousel section img {
     width: 100%;
+    height: auto;
   }
   .hooper-slide {
     display: flex;
@@ -112,12 +113,9 @@ export default {
   .carousel section h2, .carousel section p {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   }
-  .hooper-indicator.is-active {
-    background-color: #1faf8e;
-  }
   .carousel section h2 {
     text-transform: uppercase;
-    color: #1faf8e;
+    color: #18856c;
     font-weight: 900;
     font-size: 38px;
   }

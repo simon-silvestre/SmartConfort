@@ -1,6 +1,6 @@
 <template>
   <div class="NavBar">
-    <img src="../assets/logo_smartconfort.webp">
+    <img src="../assets/logo_smartconfort.webp" alt="logo de la société">
     <nav>
       <router-link to="/">Accueil</router-link> 
       <router-link to="/services">Nos Services</router-link>
@@ -30,6 +30,7 @@ export default {
   }
   .NavBar img {
     width: 135px;
+    height: auto;
     margin-left: 25px;
   }
   .NavBar nav {
@@ -37,7 +38,7 @@ export default {
   }
   .NavBar nav a {
     margin: 0 15px;
-    color: #666666;
+    color: #595959;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
@@ -47,6 +48,6 @@ export default {
     transition: ease-in-out 0.3s;
   }
   .NavBar nav a.router-link-exact-active {
-   color: #1faf8e;
+   color: #126451;
   }
 </style>

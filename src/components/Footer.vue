@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
-        <div class="footer__logo" v-scroll-reveal="{ duration: 1200, delay: 200, origin: 'bottom', distance: '20px'}">
-            <img src="@/assets/logo_smartconfort.webp" alt="">
+        <div class="footer__logo" v-scroll-reveal="{ duration: 1200, delay: 100, origin: 'bottom', distance: '20px'}">
+            <img src="@/assets/logo_smartconfort.webp" alt="logo de la société">
         </div>
         <div class="footer__informations" v-scroll-reveal="{ duration: 1200, delay: 200, origin: 'right', distance: '20px'}">
             <p><span>Smart</span>confort – 78550 Richebourg</p>
@@ -33,6 +33,7 @@ export default {
     }
     .footer__logo img {
         width: 100%;
+        height: auto;;
     }
     .footer__informations p {
         font-size: 14px;
