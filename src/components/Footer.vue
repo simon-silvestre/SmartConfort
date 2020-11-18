@@ -24,7 +24,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #fff;
+        background-color: #333333;
     }
     .footer__logo {
         width: 200px;
@@ -38,7 +38,7 @@ export default {
     .footer__informations p {
         font-size: 14px;
         font-weight: 600;
-        color: #8f8f8f;
+        color: #c2c2c2;
         margin: 15px;
     }
     .footer__informations p span {
