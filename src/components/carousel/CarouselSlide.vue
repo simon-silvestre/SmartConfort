@@ -1,5 +1,5 @@
 <template>
-    <transition name="fade">
+    <transition :name="transition">
         <div v-show="visible">
             <slot></slot>
         </div>
@@ -14,6 +14,9 @@ export default {
         }
     },
     computed: {
+        transition() {
+            return this.$parent.transition
+        },
         visible() {
             return this.index === this.$parent.index
         }

@@ -23,6 +23,7 @@ export default {
     return {
       index: 0,
       slides: [],
+      transition: null,
       timer: null
     }
   },
@@ -39,6 +40,7 @@ export default {
   methods: {
     slideNext() {
       this.index++
+      this.transition = 'fade'
       if(this.index >= this.slidesCount) {
         this.index = 0
       }
@@ -46,6 +48,7 @@ export default {
     },
     slidePrev() {
       this.index--
+      this.transition = 'fade'
       if(this.index < 0) {
         this.index = this.slidesCount -1
       }
