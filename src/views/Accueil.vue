@@ -57,11 +57,11 @@ import Footer from '@/components/Footer.vue'
 
 export default {
     components: {
-     Carousel,
-     CarouselSlide,
-     HomeIcons,
-     HomeContact,
-     Footer
+        Carousel,
+        CarouselSlide,
+        HomeIcons,
+        HomeContact,
+        Footer
   }
 }
 </script>
@@ -76,6 +76,7 @@ export default {
         width: 100%;
         background-color: rgba(0, 0, 0, 0.4); 
         left: 0;
+        top: 0;
     } 
     .text-container {
         position: absolute;
@@ -88,7 +89,7 @@ export default {
         height: 100%;
     }   
     .slide__text {
-        width: 36%;
+        width: 550px;
         text-align: center;
     }
     .slide__text h2, .slide__text p {
@@ -104,5 +105,32 @@ export default {
         color: #fff;
         font-weight: 600;
         font-size: 25px;
+    }
+    @media screen and (min-width:1920px) {
+        .carousel img {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 650px) {
+        .slide__text {
+            width: 400px;
+        }
+        .slide__text h2 {
+            font-size: 30px;
+        }
+        .slide__text p {
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width: 499px) {
+        .slide__text {
+            width: 300px;
+        }
+        .slide__text h2 {
+            font-size: 25px;
+        }
+        .slide__text p {
+            font-size: 18px;
+        }
     }
 </style>
