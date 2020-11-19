@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <Carousel>
-            <Carousel-slide>
+            <Carousel-slide style="opacity: 1">
                 <div class="overlay"></div>
                 <img src="@/assets/slider1.webp" alt="salon">
                 <div class="text-container">
@@ -11,7 +11,7 @@
                     </div>
                 </div>
             </Carousel-slide>
-            <Carousel-slide>
+            <Carousel-slide style="opacity: 1">
                 <div class="overlay"></div>
                 <img src="@/assets/slider2.webp" alt="terasse avec baie vitrée">
                 <div class="text-container">
@@ -21,7 +21,7 @@
                    </div>
                 </div>
             </Carousel-slide>
-            <Carousel-slide>
+            <Carousel-slide style="opacity: 1">
                 <div class="overlay"></div>
                 <img src="@/assets/slider3.webp" alt="enfants">
                 <div class="text-container">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
             </Carousel-slide>
-            <Carousel-slide>
+            <Carousel-slide style="opacity: 1">
                 <div class="overlay"></div>
                 <img src="@/assets/slider4.webp" alt="télécommande tactile">
                 <div class="text-container">

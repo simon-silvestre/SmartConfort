@@ -3,7 +3,9 @@
     <img src="../assets/logo_smartconfort.webp" alt="logo de la société">
     <nav>
       <router-link to="/">Accueil</router-link> 
-      <router-link to="/services">Nos Services</router-link>
+      <router-link to="/alarme">Alarme</router-link>
+      <router-link to="/video">VideoProtection</router-link>
+      <router-link to="/domotique">Domotique</router-link>
       <router-link to="/contact">Contact</router-link>
     </nav>
   </div>

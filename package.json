@@ -10,7 +10,6 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "emailjs-com": "^2.6.4",
-    "hooper": "^0.3.4",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vue-scroll-reveal": "^1.0.11",

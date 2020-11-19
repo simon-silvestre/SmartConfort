@@ -6,7 +6,9 @@
     </div>
     <nav @click="showNav = !showNav" :class="{'open':showNav}">
       <router-link to="/">Accueil</router-link> 
-      <router-link to="/services">Nos Services</router-link>
+      <router-link to="/alarme">Alarme</router-link>
+      <router-link to="/video">VideoProtection</router-link>
+      <router-link to="/domotique">Domotique</router-link>
       <router-link to="/contact">Contact</router-link>
     </nav>
   </div>
@@ -55,7 +57,7 @@ export default {
   .Mobile_nav nav {
     position: absolute;
     width: 75%;
-    height: 130px;
+    height: 220px;
     max-height: 0;
     top: 81px;
     padding: 0 3%;
@@ -75,7 +77,7 @@ export default {
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
-    padding: 10px 5%;
+    padding: 12px 5%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.03);
   }
   .Mobile_nav nav a:hover {
@@ -87,7 +89,7 @@ export default {
   }
   .Mobile_nav .open {
     visibility: visible;
-    max-height: 135px;
+    max-height: 220px;
     padding: 3%;
   }
 </style>
