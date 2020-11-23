@@ -39,6 +39,7 @@ export default {
   * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
   }
   #app {
     font-family: "Open Sans", Arial, sans-serif;
